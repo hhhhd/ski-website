@@ -35,7 +35,6 @@ export default {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
 
@@ -59,7 +58,6 @@ export default {
   left: 0;
   height: 90%;
   width: 100%;
-  background: #0f0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -73,6 +71,7 @@ export default {
   display: flex;
   align-items: center;
   flex-direction: column;
+  /* box-shadow: -5px 5px 100px #999 inset; */
 }
 
 .nav span {
@@ -88,7 +87,16 @@ export default {
   width: 70%;
   height: 100%;
   overflow-y: scroll;
-  background: #f0f;
+  /* box-shadow: 5px 5px 100px #999 inset; */
+}
+
+.detail p {
+  padding: 20px;
+}
+
+.detail h1, h2, h3, h4, h5, h6 {
+  padding: 20px;
+  margin: 0;
 }
 
 .section {
