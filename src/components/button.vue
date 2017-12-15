@@ -2,11 +2,13 @@
   <section class="button">
     <h1>button</h1>
     <my-code>
-      <div slot="codeText">
-        <pre>
-          <p>asdas</p>
-        </pre>
-      </div>
+      <pre slot="codeText">
+<p>&lttemplate&gt
+  &ltsection&gt
+    &lth1&gtbutton&lt/h1&gt
+  &lt/sention&gt
+&lt/template&gt</p>
+      </pre>
     </my-code>
   </section>
 </template>

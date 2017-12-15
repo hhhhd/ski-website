@@ -3,36 +3,28 @@
       <div class="show">
         <slot name="code"></slot>
       </div>
-      <transition name="fade">
-        <div v-if="Scode" class="code">
-          <slot name="codeText"></slot>
-        </div>
-      </transition>
-      <div class="btm" @click="showCode">
-          <span class="spanMsg">{{ msg }}</span>
+      <div v-show="Scode" class="code" ref="code">
+        <slot name="codeText"></slot>
+      </div>
+      <div class="btm" @click="Scode = !Scode">
+          <span class="spanMsg">代码块</span>
       </div>
     </div>
 </template>
 
 <script>
 export default {
-  data() {
+  data () {
     return {
-      msg: "显示代码",
       Scode: false
-    };
-  },
-  methods: {
-    showCode() {
-      this.Scode = !this.Scode;
-      if (this.Scode) {
-        this.msg = "隐藏代码";
-      } else {
-        this.msg = "显示代码";
-      }
     }
+  },
+  mounted () {
+    console.log(typeof this.$refs.code.innerHTML)
+    // let a = this.$refs.code.innerHTML
+    // this.$refs.textarea.innerHTML = this.$refs.code.innerHTML
   }
-};
+}
 </script>
 
 <style scoped>
@@ -60,15 +52,32 @@ export default {
 
 .code {
   padding: 10px;
-  background: rgba(153, 153, 153, .1)
+  /* background: rgba(153, 153, 153, .1) */
 }
 
-.fade-enter-active,
+.code pre {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: scroll
+}
+
+.code p {
+  margin: 0;
+  padding: 0;
+  color: rgb(85, 158, 248);
+}
+
+.code span {
+  color: rgb(151, 212, 90)
+}
+
+/* .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 1s;
+  transition: opacity .1s;
 }
 .fade-enter,
-.fade-leave {
+.fade-leave-to {
   opacity: 0;
-}
+} */
 </style>
