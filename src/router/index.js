@@ -18,11 +18,13 @@ import swipe from '../components/swipe.vue'
 import tabbar from '../components/tabbar.vue'
 import tabContainer from '../components/tabContainer.vue'
 import toast from '../components/toast.vue'
+import index from '../components/index.vue'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
+    {path: '/', component: index},
     {path: '/actionSheet', component: actionSheet},
     {path: '/alert', component: alert},
     {path: '/badge', component: badge},

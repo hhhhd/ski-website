@@ -7,7 +7,9 @@
           <span v-for="(item, index) in navArr" :key="index" @click="$router.push(`/${item}`)">{{ item }}</span>
         </div>
         <div class="detail">
+          <transition name="fade">
           <router-view/>
+          </transition>
           <span class="footer"></span>
         </div>
       </div>
@@ -90,11 +92,7 @@ export default {
   /* box-shadow: 5px 5px 100px #999 inset; */
 }
 
-.detail p {
-  padding: 20px;
-}
-
-.detail h1, h2, h3, h4, h5, h6 {
+.detail h1, h2, h3, h4, h5, h6, code, p {
   padding: 20px;
   margin: 0;
 }
@@ -104,5 +102,12 @@ export default {
   width: 100%;
   background: #000;
   overflow-y: scroll;
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .6s
+}
+.fade-enter, .fade-leave {
+    opacity: 0
 }
 </style>

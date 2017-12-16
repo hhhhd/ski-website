@@ -3,7 +3,7 @@
       <div class="show">
         <slot name="code"></slot>
       </div>
-      <div v-show="Scode" class="code" ref="code">
+      <div v-show="Scode" class="code">
         <slot name="codeText"></slot>
       </div>
       <div class="btm" @click="Scode = !Scode">
@@ -18,11 +18,6 @@ export default {
     return {
       Scode: false
     }
-  },
-  mounted () {
-    console.log(typeof this.$refs.code.innerHTML)
-    // let a = this.$refs.code.innerHTML
-    // this.$refs.textarea.innerHTML = this.$refs.code.innerHTML
   }
 }
 </script>
@@ -38,7 +33,7 @@ export default {
 }
 
 .show {
-  height: 50px;
+  height: auto;
   background: #0f0;
 }
 
@@ -69,15 +64,6 @@ export default {
 }
 
 .code span {
-  color: rgb(151, 212, 90)
+  color: rgb(51, 2, 90)
 }
-
-/* .fade-enter-active,
-.fade-leave-active {
-  transition: opacity .1s;
-}
-.fade-enter,
-.fade-leave-to {
-  opacity: 0;
-} */
 </style>
