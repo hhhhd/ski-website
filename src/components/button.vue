@@ -33,11 +33,10 @@
 
 <script>
 import { button } from 'ski-ui'
-console.log(button)
 
 export default {
   components: {
-    'my-button': button
+    MyButton: button
   }
 }
 </script>
