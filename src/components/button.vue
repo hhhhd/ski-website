@@ -3,6 +3,15 @@
     <h1>button</h1>
     <my-code>
       <div slot="code">
+        <my-button type="default" size="big"></my-button>
+        <my-button type="danger" size="big"></my-button>
+        <my-button type="primary" size="big"></my-button>
+        <my-button type="default" size="middle"></my-button>
+        <my-button type="danger" size="middle"></my-button>
+        <my-button type="primary" size="middle"></my-button>
+        <my-button type="default" size="small"></my-button>
+        <my-button type="danger" size="small"></my-button>
+        <my-button type="primary" size="small"></my-button>
       </div>
       <pre slot="codeText">
 <p>&lttemplate&gt
@@ -23,9 +32,13 @@
 </template>
 
 <script>
-import button from 'ski-ui'
+import { button } from 'ski-ui'
 console.log(button)
+
 export default {
+  components: {
+    'my-button': button
+  }
 }
 </script>
 

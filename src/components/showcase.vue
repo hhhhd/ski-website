@@ -33,7 +33,6 @@ export default {
 }
 
 .show {
-  height: auto;
   background: #0f0;
 }
 

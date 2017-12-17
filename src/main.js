@@ -5,6 +5,9 @@ import App from './App'
 import router from './router'
 import MyCode from './components/showcase.vue'
 
+require('normalize.css')
+require('animate.css')
+
 Vue.config.productionTip = false
 Vue.component('my-code', MyCode)
 
