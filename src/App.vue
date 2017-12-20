@@ -97,11 +97,39 @@ export default {
   margin: 0;
 }
 
+.detail p {
+  line-height: 180%;
+}
+
 .section {
   height: 100%;
   width: 100%;
   background: #000;
   overflow-y: scroll;
+}
+
+.skiblue {
+  color: rgb(85, 158, 248);
+}
+
+.blue {
+  color: rgb(0, 0, 255)
+}
+
+.red {
+  color: rgb(255, 0, 0)
+}
+
+.pink {
+  color: rgb(197, 134, 192)
+}
+
+.green {
+  color: rgb(38, 127, 153)
+}
+
+.white {
+  color: #fff;
 }
 
 .fade-enter-active, .fade-leave-active {

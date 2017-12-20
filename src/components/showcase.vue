@@ -30,18 +30,28 @@ export default {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0px 0px 10px rgba(100, 100, 100, 0.2);
+  transition: all .3s;
+  background: rgb(30, 30, 30);
+  color: #fff;
+}
+
+.showcase:hover {
+  box-shadow: 0px 0px 15px rgba(100, 100, 100, 0.3);
 }
 
 .show {
-  background: #0f0;
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(100, 100, 100, 0.2);
 }
 
 .btm {
+  background: #fff;
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  color: #000;
 }
 
 .code {
@@ -54,15 +64,5 @@ export default {
   height: 100%;
   width: 100%;
   overflow-x: scroll
-}
-
-.code p {
-  margin: 0;
-  padding: 0;
-  color: rgb(85, 158, 248);
-}
-
-.code span {
-  color: rgb(51, 2, 90)
 }
 </style>

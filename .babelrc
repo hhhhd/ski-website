@@ -1,15 +1,26 @@
 {
   "presets": [
-    ["env", {
-      "modules": false
-    }],
-    "stage-2"
+    "es2015",
+    "stage-0"
   ],
-  "plugins": ["transform-runtime"],
+  "plugins": [
+    "transform-runtime",    
+    "transform-decorators-legacy",
+    "transform-class-properties"
+  ],
+  "comments": false,
   "env": {
     "test": {
-      "presets": ["env", "stage-2"],
-      "plugins": ["transform-es2015-modules-commonjs", "dynamic-import-node"]
+      "presets": [
+        "es2015",
+        "stage-0"
+      ],
+      "plugins": [
+        "istanbul",
+        "transform-runtime",    
+        "transform-decorators-legacy",
+        "transform-class-properties"
+      ]
     }
   }
 }
