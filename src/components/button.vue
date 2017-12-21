@@ -5,15 +5,6 @@
     <p>属性：'<span class="red">type</span>'&'<span class="red">size</span>'，<span class="red">type</span>:"<span class="blue">default</span> || <span class="blue">danger</span> || <span class="blue">primary</span>" <span class="red">size</span>:"<span class="blue">big</span> || <span class="blue">middle</span> || <span class="blue">small</span>"</p>
     <my-code>
       <div slot="code">
-        <!-- <my-button type="default" size="big"></my-button>
-        <my-button type="danger" size="big"></my-button>
-        <my-button type="primary" size="big"></my-button>
-        <my-button type="default" size="middle"></my-button>
-        <my-button type="danger" size="middle"></my-button>
-        <my-button type="primary" size="middle"></my-button>
-        <my-button type="default" size="small"></my-button>
-        <my-button type="danger" size="small"></my-button>
-        <my-button type="primary" size="small"></my-button> -->
         <my-button type="default" size="big"></my-button>
       </div>
       <pre slot="codeText">
