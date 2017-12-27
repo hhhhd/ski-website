@@ -19,12 +19,14 @@ import tabbar from '../components/tabbar.vue'
 import tabContainer from '../components/tabContainer.vue'
 import toast from '../components/toast.vue'
 import index from '../components/index.vue'
+import innovation from '../components/innovation.vue'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {path: '/', component: index},
+    {path: '/innovation', component: innovation},
     {path: '/actionSheet', component: actionSheet},
     {path: '/alert', component: alert},
     {path: '/badge', component: badge},
