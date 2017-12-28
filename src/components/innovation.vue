@@ -1,7 +1,16 @@
 <template>
   <div class="all" @scroll="scorllEvent">
     <div v-for="(item, index) in divArr" :key="index" class="grid" :class="{'down': down.indexOf(index) !== -1, 'right': right.indexOf(index) !== -1, 'left': left.indexOf(index) !== -1, 'top': top.indexOf(index) !== -1}"></div>
-    <div class="photo"></div>
+    <div class="photoOne"></div>
+    <div class="photoAdOne">
+      <h1>这是头牛</h1>
+      <p>产自新西兰的纯种牦牛产自新西兰的纯种牦牛产自新西兰的纯种牦牛产自新西兰的纯种牦牛产自新西兰产自新西兰的纯种牦牛产自新西兰的纯种牦牛产自新西兰的纯种牦牛产自新西兰的纯种牦牛产自新西兰的纯种牦牛产自新西兰的纯种牦牛产自新西兰的纯种牦牛产自新西兰的纯种牦牛产自新西兰的纯种牦牛的纯种牦牛产自新西兰的纯种牦牛产自新西兰的纯种牦牛产自新西兰的纯种牦牛产自新西兰的纯种牦牛</p>
+    </div>
+    <div class="photoTwo"></div>
+    <div class="photoAdTwo">
+      <h1>这是头牛</h1>
+      <p>产自新西兰的纯种牦牛产自新西兰的纯种牦牛产自新西兰的纯种牦牛产自新西兰的纯种牦牛产自新西兰产自新西兰的纯种牦牛产自新西兰的纯种牦牛产自新西兰的纯种牦牛产自新西兰的纯种牦牛产自新西兰的纯种牦牛产自新西兰的纯种牦牛产自新西兰的纯种牦牛产自新西兰的纯种牦牛产自新西兰的纯种牦牛的纯种牦牛产自新西兰的纯种牦牛产自新西兰的纯种牦牛产自新西兰的纯种牦牛产自新西兰的纯种牦牛</p>
+    </div>
   </div>
 </template>
 
@@ -23,16 +32,6 @@ export default {
   },
   methods: {
     show (arr) {
-      // this.down.push(arr[0])
-      // this.right.push(arr[1])
-      // this.top.push(arr[2])
-      // this.left.push(arr[3])
-      // this.down.push(arr[4])
-      // this.right.push(arr[5])
-      // this.top.push(arr[6])
-      // this.left.push(arr[7])
-      // this.down.push(arr[8])
-      // this.right.push(arr[9])
       this.left.push(arr[0])
       this.left.push(arr[1])
       this.left.push(arr[5])
@@ -52,8 +51,13 @@ export default {
     },
     scorllEvent (e) {
       console.log(e.target.scrollTop)
-      if (e.target.scrollTop > 500 && e.target.scrollTop < 700) {
+      if (e.target.scrollTop > 275 && e.target.scrollTop < 975) {
         let Sarr = [20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
+        this.unshow()
+        this.show(Sarr)
+      } else if (e.target.scrollTop > 975 && e.target.scrollTop < 1400) {
+        let Sarr = [30, 31, 32, 33, 34, 35, 36, 37, 38, 39]
+        this.unshow()
         this.show(Sarr)
       } else {
         this.unshow()
@@ -86,7 +90,7 @@ export default {
   left: 0;
 }
 /* 201.59 */
-.photo {
+.photoOne {
   width: 604.76px;
   height: 400px;
   position: absolute;
@@ -94,7 +98,32 @@ export default {
   left: 403.18px;
   background: url('../assets/ox.jpg') no-repeat center center;
   background-size: 100%;
-  background-color: #000;
+}
+
+.photoTwo {
+  width: 604.76px;
+  height: 400px;
+  position: absolute;
+  top: 1200px;
+  left: 0;
+  background: url('../assets/ox.jpg') no-repeat center center;
+  background-size: 100%;
+}
+
+.photoAdTwo {
+  position: absolute;
+  top: 1200px;
+  width: 403.18px;
+  height: 400px;
+  left: 604.76px;
+}
+
+.photoAdOne {
+  position: absolute;
+  top: 800px;
+  width: 403.18px;
+  height: 400px;
+  left: 0;
 }
 
 .down {
