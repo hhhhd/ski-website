@@ -22,7 +22,7 @@ export default {
   name: 'app',
   data () {
     return {
-      navArr: ['actionSheet', 'alert', 'badge', 'button', 'checklist', 'field', 'header', 'indicator', 'loading', 'popup', 'prompt', 'range', 'search', 'spinner', 'swipe', 'tabbar', 'tabContainer', 'toast']
+      navArr: ['actionSheet', 'alert', 'badge', 'button', 'checklist', 'field', 'header', 'indicator', 'loading', 'popup', 'prompt', 'range', 'search', 'spinner', 'swipe', 'switching', 'tabbar', 'tabContainer', 'toast']
     }
   },
   mounted () {

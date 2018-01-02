@@ -15,6 +15,7 @@ import range from '../components/range.vue'
 import search from '../components/search.vue'
 import spinner from '../components/spinner.vue'
 import swipe from '../components/swipe.vue'
+import switching from '../components/switching.vue'
 import tabbar from '../components/tabbar.vue'
 import tabContainer from '../components/tabContainer.vue'
 import toast from '../components/toast.vue'
@@ -26,6 +27,7 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {path: '/', component: index},
+    {path: '/switching', component: switching},
     {path: '/innovation', component: innovation},
     {path: '/actionSheet', component: actionSheet},
     {path: '/alert', component: alert},
