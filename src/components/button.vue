@@ -3,21 +3,21 @@
     <h1>button</h1>
     <p>按钮分为三种类型，三种大小，通过两个属性进行控制</p>
     <p>属性：'<span class="red">type</span>'&'<span class="red">size</span>'，<span class="red">type</span>:"<span class="blue">default</span> || <span class="blue">danger</span> || <span class="blue">primary</span>" <span class="red">size</span>:"<span class="blue">big</span> || <span class="blue">middle</span> || <span class="blue">small</span>"</p>
-    <my-code>
+    <ski-code>
       <div slot="code">
-        <my-button type="default" size="big"></my-button>
+        <ski-button type="default" size="big"></ski-button>
       </div>
       <pre slot="codeText">
 &lt<span class="skiblue">template</span>&gt
-  &lt<span class="skiblue">my-button</span> <span class="red">type</span>=<span class="blue">"danger"</span> <span class="red">size</span>=<span class="blue">"big"</span>&gt&lt/<span class="skiblue">my-button</span>&gt
-  &lt<span class="skiblue">my-button</span> <span class="red">type</span>=<span class="blue">"danger"</span> <span class="red">size</span>=<span class="blue">"small"</span>&gt&lt/<span class="skiblue">my-button</span>&gt
-  &lt<span class="skiblue">my-button</span> <span class="red">type</span>=<span class="blue">"danger"</span> <span class="red">size</span>=<span class="blue">"middle"</span>&gt&lt/<span class="skiblue">my-button</span>&gt
-  &lt<span class="skiblue">my-button</span> <span class="red">type</span>=<span class="blue">"default"</span> <span class="red">size</span>=<span class="blue">"big"</span>&gt&lt/<span class="skiblue">my-button</span>&gt
-  &lt<span class="skiblue">my-button</span> <span class="red">type</span>=<span class="blue">"default"</span> <span class="red">size</span>=<span class="blue">"small"</span>&gt&lt/<span class="skiblue">my-button</span>&gt
-  &lt<span class="skiblue">my-button</span> <span class="red">type</span>=<span class="blue">"default"</span> <span class="red">size</span>=<span class="blue">"middle"</span>&gt&lt/<span class="skiblue">my-button</span>&gt
-  &lt<span class="skiblue">my-button</span> <span class="red">type</span>=<span class="blue">"primary"</span> <span class="red">size</span>=<span class="blue">"big"</span>&gt&lt/<span class="skiblue">my-button</span>&gt
-  &lt<span class="skiblue">my-button</span> <span class="red">type</span>=<span class="blue">"primary"</span> <span class="red">size</span>=<span class="blue">"small"</span>&gt&lt/<span class="skiblue">my-button</span>&gt
-  &lt<span class="skiblue">my-button</span> <span class="red">type</span>=<span class="blue">"primary"</span> <span class="red">size</span>=<span class="blue">"middle"</span>&gt&lt/<span class="skiblue">my-button</span>&gt
+  &lt<span class="skiblue">ski-button</span> <span class="red">type</span>=<span class="blue">"danger"</span> <span class="red">size</span>=<span class="blue">"big"</span>&gt&lt/<span class="skiblue">ski-button</span>&gt
+  &lt<span class="skiblue">ski-button</span> <span class="red">type</span>=<span class="blue">"danger"</span> <span class="red">size</span>=<span class="blue">"small"</span>&gt&lt/<span class="skiblue">ski-button</span>&gt
+  &lt<span class="skiblue">ski-button</span> <span class="red">type</span>=<span class="blue">"danger"</span> <span class="red">size</span>=<span class="blue">"middle"</span>&gt&lt/<span class="skiblue">ski-button</span>&gt
+  &lt<span class="skiblue">ski-button</span> <span class="red">type</span>=<span class="blue">"default"</span> <span class="red">size</span>=<span class="blue">"big"</span>&gt&lt/<span class="skiblue">ski-button</span>&gt
+  &lt<span class="skiblue">ski-button</span> <span class="red">type</span>=<span class="blue">"default"</span> <span class="red">size</span>=<span class="blue">"small"</span>&gt&lt/<span class="skiblue">ski-button</span>&gt
+  &lt<span class="skiblue">ski-button</span> <span class="red">type</span>=<span class="blue">"default"</span> <span class="red">size</span>=<span class="blue">"middle"</span>&gt&lt/<span class="skiblue">ski-button</span>&gt
+  &lt<span class="skiblue">ski-button</span> <span class="red">type</span>=<span class="blue">"primary"</span> <span class="red">size</span>=<span class="blue">"big"</span>&gt&lt/<span class="skiblue">ski-button</span>&gt
+  &lt<span class="skiblue">ski-button</span> <span class="red">type</span>=<span class="blue">"primary"</span> <span class="red">size</span>=<span class="blue">"small"</span>&gt&lt/<span class="skiblue">ski-button</span>&gt
+  &lt<span class="skiblue">ski-button</span> <span class="red">type</span>=<span class="blue">"primary"</span> <span class="red">size</span>=<span class="blue">"middle"</span>&gt&lt/<span class="skiblue">ski-button</span>&gt
 &lt/<span class="skiblue">template</span>&gt
 
 &lt<span class="skiblue">script</span>&gt
@@ -25,12 +25,12 @@
 
 <span class="pink">export default</span> {
   <span class="skiblue">components:</span> {
-    <span class="skiblue">MyButton: button</span>
+    <span class="skiblue">skiButton: button</span>
   }
 }
 &lt/<span class="skiblue">script</span>&gt
       </pre>
-    </my-code>
+    </ski-code>
   </section>
 </template>
 
@@ -39,7 +39,7 @@ import { button } from 'ski-ui'
 
 export default {
   components: {
-    MyButton: button
+    skiButton: button
   }
 }
 </script>

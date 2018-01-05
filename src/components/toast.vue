@@ -22,7 +22,7 @@
         </ul>
       </li>
     </ul>
-    <my-code>
+    <ski-code>
       <pre slot="codeText">
 &lt<span class="skiblue">template</span>&gt
   &lt<span class="skiblue">ski-toast</span> <span class="red">type</span>=<span class="blue">"middle"</span> <span class="red">show</span>=<span class="blue">"true"</span> <span class="red">msg</span>=<span class="blue">"text"</span>&gt&lt/<span class="skiblue">ski-toast</span>&gt
@@ -38,7 +38,7 @@
 }
 &lt/<span class="skiblue">script</span>&gt
       </pre>
-    </my-code>
+    </ski-code>
   </section>
 </template>
 

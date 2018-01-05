@@ -3,7 +3,7 @@
     <h1>actionSheet</h1>
     <p>调用相机进行拍照取照片</p>
     <p>属性：show（true || false）</p>
-    <my-code>
+    <ski-code>
       <pre slot="codeText">
 &lt<span class="skiblue">template</span>&gt
   &lt<span class="skiblue">ski-actionSheet</span> <span class="red">show</span>=<span class="blue">"true"</span>&gt&lt/<span class="skiblue">ski-actionSheet</span>&gt
@@ -19,7 +19,7 @@
 }
 &lt/<span class="skiblue">script</span>&gt
       </pre>
-    </my-code>
+    </ski-code>
   </section>
 </template>
 

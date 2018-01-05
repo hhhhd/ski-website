@@ -3,13 +3,13 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import MyCode from './components/showcase.vue'
+import skiCode from './components/showcase.vue'
 
 require('normalize.css')
 require('animate.css')
 
 Vue.config.productionTip = false
-Vue.component('my-code', MyCode)
+Vue.component('ski-code', skiCode)
 
 /* eslint-disable no-new */
 new Vue({

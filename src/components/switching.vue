@@ -3,7 +3,7 @@
     <h1>switch</h1>
     <p>开关按钮</p>
     <p>属性：v-model（内传入 true || false）</p>
-    <my-code>
+    <ski-code>
       <pre slot="codeText">
 &lt<span class="skiblue">template</span>&gt
   &lt<span class="skiblue">ski-switch</span>&gt&lt/<span class="skiblue">ski-switch</span>&gt
@@ -19,7 +19,7 @@
 }
 &lt/<span class="skiblue">script</span>&gt
       </pre>
-    </my-code>
+    </ski-code>
   </section>
 </template>
 

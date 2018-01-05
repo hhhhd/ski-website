@@ -3,10 +3,10 @@
     <h1>prompt</h1>
     <p>属性：show(显示 true || false) msg(String)</p>
     <p>可监听事件：@value (再点击确定的时候会获取到输入的值)</p>
-    <my-code>
+    <ski-code>
       <pre slot="codeText">
 &lt<span class="skiblue">template</span>&gt
-  &lt<span class="skiblue">my-prompt</span> <span class="red">msg</span>=<span class="blue">"String"</span> <span class="red">show</span>=<span class="blue">"true"</span> <span class="red">@value</span>=<span class="blue">"getValue"</span>&gt&lt/<span class="skiblue">my-prompt</span>&gt
+  &lt<span class="skiblue">ski-prompt</span> <span class="red">msg</span>=<span class="blue">"String"</span> <span class="red">show</span>=<span class="blue">"true"</span> <span class="red">@value</span>=<span class="blue">"getValue"</span>&gt&lt/<span class="skiblue">ski-prompt</span>&gt
 &lt/<span class="skiblue">template</span>&gt
 
 &lt<span class="skiblue">script</span>&gt
@@ -14,7 +14,7 @@
 
 <span class="pink">export default</span> {
   <span class="skiblue">components:</span> {
-    <span class="skiblue">Myprompt: prompt</span>
+    <span class="skiblue">skiprompt: prompt</span>
   },
   <span class="skiblue">motheds</span>: {
     <span class="skiblue">getValue</span> (v) {
@@ -24,7 +24,7 @@
 }
 &lt/<span class="skiblue">script</span>&gt
       </pre>
-    </my-code>
+    </ski-code>
   </section>
 </template>
 

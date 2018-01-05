@@ -3,7 +3,7 @@
     <h1>search</h1>
     <p>没有属性，直接使用</p>
     <p>用 @value 获取到输入的值</p>
-    <my-code>
+    <ski-code>
       <pre slot="codeText">
 &lt<span class="skiblue">template</span>&gt
   &lt<span class="skiblue">ski-search</span> <span class="red">@value</span>=<span class="blue">"Event"</span>&gt&lt/<span class="skiblue">ski-search</span>&gt
@@ -19,7 +19,7 @@
 }
 &lt/<span class="skiblue">script</span>&gt
       </pre>
-    </my-code>
+    </ski-code>
   </section>
 </template>
 

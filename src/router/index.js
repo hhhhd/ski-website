@@ -21,12 +21,14 @@ import tabContainer from '../components/tabContainer.vue'
 import toast from '../components/toast.vue'
 import index from '../components/index.vue'
 import innovation from '../components/innovation.vue'
+import footer from '../components/footer.vue'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {path: '/', component: index},
+    {path: '/footer', component: footer},
     {path: '/switching', component: switching},
     {path: '/innovation', component: innovation},
     {path: '/actionSheet', component: actionSheet},

@@ -3,14 +3,14 @@
     <h1>spinner</h1>
     <p>动画加载</p>
     <p>type(round, snake, roulette, window, wave)</p>
-    <my-code>
+    <ski-code>
       <pre slot="codeText">
 &lt<span class="skiblue">template</span>&gt
-  &lt<span class="skiblue">my-spinner</span> <span class="red">type</span>=<span class="blue">"snake"</span>&gt&lt/<span class="skiblue">my-spinner</span>&gt
-  &lt<span class="skiblue">my-spinner</span> <span class="red">type</span>=<span class="blue">"round"</span>&gt&lt/<span class="skiblue">my-spinner</span>&gt
-  &lt<span class="skiblue">my-spinner</span> <span class="red">type</span>=<span class="blue">"roulette"</span>&gt&lt/<span class="skiblue">my-spinner</span>&gt
-  &lt<span class="skiblue">my-spinner</span> <span class="red">type</span>=<span class="blue">"window"</span>&gt&lt/<span class="skiblue">my-spinner</span>&gt
-  &lt<span class="skiblue">my-spinner</span> <span class="red">type</span>=<span class="blue">"wave"</span>&gt&lt/<span class="skiblue">my-spinner</span>&gt
+  &lt<span class="skiblue">ski-spinner</span> <span class="red">type</span>=<span class="blue">"snake"</span>&gt&lt/<span class="skiblue">ski-spinner</span>&gt
+  &lt<span class="skiblue">ski-spinner</span> <span class="red">type</span>=<span class="blue">"round"</span>&gt&lt/<span class="skiblue">ski-spinner</span>&gt
+  &lt<span class="skiblue">ski-spinner</span> <span class="red">type</span>=<span class="blue">"roulette"</span>&gt&lt/<span class="skiblue">ski-spinner</span>&gt
+  &lt<span class="skiblue">ski-spinner</span> <span class="red">type</span>=<span class="blue">"window"</span>&gt&lt/<span class="skiblue">ski-spinner</span>&gt
+  &lt<span class="skiblue">ski-spinner</span> <span class="red">type</span>=<span class="blue">"wave"</span>&gt&lt/<span class="skiblue">ski-spinner</span>&gt
 &lt/<span class="skiblue">template</span>&gt
 
 &lt<span class="skiblue">script</span>&gt
@@ -18,12 +18,12 @@
 
 <span class="pink">export default</span> {
   <span class="skiblue">components:</span> {
-    <span class="skiblue">Myspinner: spinner</span>
+    <span class="skiblue">skispinner: spinner</span>
   }
 }
 &lt/<span class="skiblue">script</span>&gt
       </pre>
-    </my-code>
+    </ski-code>
   </section>
 </template>
 

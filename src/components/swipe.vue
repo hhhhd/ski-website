@@ -3,7 +3,7 @@
     <h1>swipe</h1>
     <p>滚动导航栏</p>
     <p>暂时没有属性：后续添加</p>
-    <my-code>
+    <ski-code>
       <pre slot="codeText">
 &lt<span class="skiblue">template</span>&gt
   &lt<span class="skiblue">ski-swipe</span>&gt&lt/<span class="skiblue">ski-swipe</span>&gt
@@ -19,7 +19,7 @@
 }
 &lt/<span class="skiblue">script</span>&gt
       </pre>
-    </my-code>
+    </ski-code>
   </section>
 </template>
 
