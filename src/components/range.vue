@@ -3,6 +3,24 @@
     <h1>range</h1>
     <p>两个大小：big、small</p>
     <p>属性：type（big，small）setValue（number）：设定初始值 setStep（number）设置每一步走多大</p>
+    <ul>
+      <li>type
+        <ul>
+          <li>big</li>
+          <li>small</li>
+        </ul>
+      </li>
+      <li>setValue
+        <ul>
+          <li>number</li>
+        </ul>
+      </li> 
+      <li>setStep
+        <ul>
+          <li>number</li>
+        </ul>
+      </li>
+    </ul>
     <ski-code>
       <pre slot="codeText">
 &lt<span class="skiblue">template</span>&gt

@@ -3,6 +3,22 @@
     <h1>button</h1>
     <p>按钮分为三种类型，三种大小，通过两个属性进行控制</p>
     <p>属性：'<span class="red">type</span>'&'<span class="red">size</span>'，<span class="red">type</span>:"<span class="blue">default</span> || <span class="blue">danger</span> || <span class="blue">primary</span>" <span class="red">size</span>:"<span class="blue">big</span> || <span class="blue">middle</span> || <span class="blue">small</span>"</p>
+    <ul>
+      <li>type
+        <ul>
+          <li>default</li>
+          <li>danger</li>
+          <li>primary</li>
+        </ul>
+      </li>
+      <li>size
+        <ul>
+          <li>big</li>
+          <li>small</li>
+          <li>middle</li>
+        </ul>
+      </li>
+    </ul>
     <ski-code>
       <div slot="code">
         <ski-button type="default" size="big"></ski-button>

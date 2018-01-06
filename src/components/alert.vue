@@ -1,7 +1,19 @@
 <template>
   <section>
     <h1>Alert</h1>
-    <p>属性：msg（显示弹出的文字）show(true || false)</p>
+    <ul>
+      <li>show
+        <ul>
+          <li>true</li>
+          <li>false</li>
+        </ul>
+      </li>
+      <li>msg
+        <ul>
+          <li>String</li>
+        </ul>
+      </li> 
+    </ul>
     <ski-code>
       <pre slot="codeText">
 &lt<span class="skiblue">template</span>&gt

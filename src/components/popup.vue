@@ -3,6 +3,26 @@
     <h1>popup</h1>
     <p>三种类型：top，middle，right</p>
     <p>属性：type（top，middle，right） msg（string） show（true || false）</p>
+    <ul>
+      <li>type
+        <ul>
+          <li>top</li>
+          <li>middle</li>
+          <li>right</li>
+        </ul>
+      </li>
+      <li>msg
+        <ul>
+          <li>String</li>
+        </ul>
+      </li> 
+      <li>show
+        <ul>
+          <li>true</li>
+          <li>false</li>
+        </ul>
+      </li>
+    </ul>
     <ski-code>
       <pre slot="codeText">
 &lt<span class="skiblue">template</span>&gt

@@ -3,6 +3,13 @@
     <h1>prompt</h1>
     <p>属性：show(显示 true || false) msg(String)</p>
     <p>可监听事件：@value (再点击确定的时候会获取到输入的值)</p>
+    <ul>
+      <li>@value
+        <ul>
+          <li>fountion</li>
+        </ul>
+      </li>
+    </ul>
     <ski-code>
       <pre slot="codeText">
 &lt<span class="skiblue">template</span>&gt

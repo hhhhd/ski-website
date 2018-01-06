@@ -3,6 +3,32 @@
     <h1>field</h1>
     <p>五种类型</p>
     <p>四个属性：type（text, birthday, self, number, verification）msg（String）@getValue（获取输入的值）defaultText（默认文字）</p>
+    <ul>
+      <li>type
+        <ul>
+          <li>text</li>
+          <li>birthday</li>
+          <li>self</li>
+          <li>number</li>
+          <li>verification</li>
+        </ul>
+      </li>
+      <li>msg
+        <ul>
+          <li>String</li>
+        </ul>
+      </li>
+      <li>defaultText
+        <ul>
+          <li>String</li>
+        </ul>
+      </li>
+      <li>@getValue
+        <ul>
+          <li>fountion</li>
+        </ul>
+      </li>
+    </ul>
     <ski-code>
       <pre slot="codeText">
 &lt<span class="skiblue">template</span>&gt

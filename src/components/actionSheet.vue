@@ -2,7 +2,14 @@
   <section>
     <h1>actionSheet</h1>
     <p>调用相机进行拍照取照片</p>
-    <p>属性：show（true || false）</p>
+    <ul>
+      <li>show
+        <ul>
+          <li>true</li>
+          <li>false</li>
+        </ul>
+      </li>
+    </ul>
     <ski-code>
       <pre slot="codeText">
 &lt<span class="skiblue">template</span>&gt
