@@ -4,6 +4,17 @@
     <p>属性：show(显示 true || false) msg(String)</p>
     <p>可监听事件：@value (再点击确定的时候会获取到输入的值)</p>
     <ul>
+      <li>show
+        <ul>
+          <li>true</li>
+          <li>false</li>
+        </ul>
+      </li>
+      <li>msg
+        <ul>
+          <li>String</li>
+        </ul>
+      </li>
       <li>@value
         <ul>
           <li>fountion</li>

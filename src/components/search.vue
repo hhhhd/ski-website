@@ -3,6 +3,13 @@
     <h1>search</h1>
     <p>没有属性，直接使用</p>
     <p>用 @value 获取到输入的值</p>
+    <ul>
+      <li>@value
+        <ul>
+          <li>fountion</li>
+        </ul>
+      </li>
+    </ul>
     <ski-code>
       <pre slot="codeText">
 &lt<span class="skiblue">template</span>&gt
