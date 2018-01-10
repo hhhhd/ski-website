@@ -28,6 +28,7 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {path: '/', component: index},
+    {path: '/info', component: index},
     {path: '/footer', component: footer},
     {path: '/switching', component: switching},
     {path: '/innovation', component: innovation},

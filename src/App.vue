@@ -1,9 +1,19 @@
 <template>
   <div id="app">
     <div class="official">
-      <div class="top"></div>
+      <div class="open-nav" @click="showNav = !showNav">⍾</div>      
+      <div class="top">
+        <span class="logo">ski-ui
+        </span>
+        <ul class="dh">
+          <li>关于</li>
+          <li @click="$router.push('/actionSheet')">导航</li>
+          <li>信息</li>
+          <li>反馈</li>
+        </ul>
+      </div>
       <div class="content">
-        <div class="nav">
+        <div class="nav" :class="{'nav-true': showNav}">
           <span v-for="(item, index) in navArr" :key="index" @click="$router.push(`/${item}`)">{{ item }}</span>
         </div>
         <div class="detail">
@@ -22,7 +32,8 @@ export default {
   name: 'app',
   data () {
     return {
-      navArr: ['actionSheet', 'alert', 'badge', 'footer', 'button', 'checklist', 'field', 'header', 'indicator', 'loading', 'popup', 'prompt', 'range', 'search', 'spinner', 'swipe', 'switching', 'tabbar', 'tabContainer', 'toast']
+      navArr: ['info', 'actionSheet', 'alert', 'badge', 'footer', 'button', 'checklist', 'field', 'header', 'indicator', 'loading', 'popup', 'prompt', 'range', 'search', 'spinner', 'swipe', 'switching', 'tabbar', 'tabContainer', 'toast'],
+      showNav: false
     }
   },
   mounted () {
@@ -54,6 +65,46 @@ export default {
   background: #000;
 }
 
+.logo {
+  width: 30%;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  color: #fff;
+  font-size: 40px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.dh {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dh li {
+  float: left;
+  padding: 4% 45px;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: all .4s;
+}
+
+.dh li:hover {
+  background: #fff;
+  color: #000;
+}
+
 .content {
   position: absolute;
   bottom: 0;
@@ -73,7 +124,41 @@ export default {
   display: flex;
   align-items: center;
   flex-direction: column;
-  /* box-shadow: -5px 5px 100px #999 inset; */
+  position: relative;
+  left: -30%;
+  transition: all 1s;
+  opacity: 0;
+  background: linear-gradient(to right, #fff, rgb(233, 236, 233))
+}
+
+.nav-true {
+  left: 0;
+  opacity: 1;
+}
+
+.open-nav {
+  width: 100px;
+  height: 80px;
+  background: rgb(85, 158, 248);
+  z-index: 10;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  color: #fff;
+  transition: all .4s;
+}
+
+.open-nav:hover {
+  background: rgb(44, 122, 216);
+}
+
+.nav::-webkit-scrollbar {
+  display: none;
 }
 
 .nav span {
